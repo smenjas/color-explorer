@@ -68,15 +68,6 @@ th, td {
         color: white;
     }
 
-    a, a:visited, a:visited {
-        background: black;
-        color: white;
-    }
-    a:hover {
-        background: white;
-        color: black;
-    }
-
     table {
         border: 1px solid white;
     }
