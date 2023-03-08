@@ -50,6 +50,16 @@ table.color-names td {
     border: none;
 }
 
+@media print {
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+    form#colors {
+        display: none;
+    }
+}
+
 @media screen and (prefers-color-scheme: dark) {
     body {
         background: black;
