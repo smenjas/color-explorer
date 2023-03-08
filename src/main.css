@@ -14,11 +14,18 @@ input {
     padding: 0.3rem;
 }
 
-table.color-codes th,
-table.color-codes td,
-table.color-names th,
-table.color-names td {
-    border: none;
+table {
+    border: 1px solid black;
+    border-radius: 1rem;
+    border-spacing: 0;
+    margin: auto;
+}
+th {
+    background: #ccc;
+}
+th, td {
+    border: 1px solid #bbb;
+    padding: 0.5rem;
 }
 
 table.color-codes tr:first-child td:first-child,
@@ -36,18 +43,11 @@ tr:last-child td:last-child {
     border-bottom-right-radius: 1rem;
 }
 
-table {
-    border: 1px solid black;
-    border-radius: 1rem;
-    border-spacing: 0;
-    margin: auto;
-}
-th {
-    background: #ccc;
-}
-th, td {
-    border: 1px solid #bbb;
-    padding: 0.5rem;
+table.color-codes th,
+table.color-codes td,
+table.color-names th,
+table.color-names td {
+    border: none;
 }
 
 @media screen and (prefers-color-scheme: dark) {
