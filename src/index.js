@@ -402,12 +402,20 @@ class Color {
     }
 
     static renderColorNames(color = null) {
-        if (color !== null) {
-            color = color.trim();
-        }
+        color ??= '';
+        color = color.trim().toLowerCase();
 
-        const colorNames = (!color) ? Object.keys(Color.names) :
-            (color in Color.substrings) ? Color.substrings[color] : [];
+        const colors = color.split(/(\s+or\s+|\s*,\s*)/);
+
+        let colorNames = [];
+        for (const c of colors) {
+            if (colors.length > 1 && c === '') {
+                continue;
+            }
+            const names = (!c) ? Object.keys(Color.names) :
+                (c in Color.substrings) ? Color.substrings[c] : [];
+            colorNames = colorNames.concat(names);
+        }
 
         if (colorNames.length < 1) {
             return '';
