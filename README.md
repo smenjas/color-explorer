@@ -17,3 +17,6 @@ CSS, & client-side JS.
 
 ![Filter colors by: medium,pink,purple](screenshots/medium,pink,purple.png)
 ![Filter colors by: 63](screenshots/63.png)
+
+favicon by [Twemoji](https://twemoji.twitter.com/), licensed as [CC-BY
+4.0](https://creativecommons.org/licenses/by/4.0/).
