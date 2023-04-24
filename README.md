@@ -6,7 +6,8 @@ CSS, & JS.
 
 ## Exercise Constraints
 - No libraries, frameworks, templates, or preprocessors outside Node.js
-- No dev tools except Git, an editor, and a web browser
+- Limited dev tools:
+  - [nodemon](https://www.npmjs.com/package/nodemon)
 
 ## Goals
 - [x] Show all of the [CSS color names](https://en.wikipedia.org/wiki/Web_colors).
@@ -18,10 +19,14 @@ CSS, & JS.
 ![Filter colors by: 63](screenshots/63.png)
 
 ## Development
+Install the dependencies by running:
+```sh
+npm install
+```
 Start the node server with:
 ```sh
 cd src
-node .
+../node_modules/nodemon/bin/nodemon.js .
 ```
 
 favicon by [Twemoji](https://twemoji.twitter.com/), licensed as [CC-BY

@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/smenjas/color-explorer/issues"
   },
-  "homepage": "https://github.com/smenjas/color-explorer#readme"
+  "homepage": "https://github.com/smenjas/color-explorer#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
