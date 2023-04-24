@@ -1,0 +1,31 @@
+{
+  "name": "color-explorer",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "An exploration of color",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd src && ../node_modules/nodemon/bin/nodemon.js .",
+    "lint": "node_modules/eslint/bin/eslint.js src/*.js client/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smenjas/color-explorer.git"
+  },
+  "keywords": [
+    "color",
+    "colour",
+    "palette"
+  ],
+  "author": "Benjamin Thornton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smenjas/color-explorer/issues"
+  },
+  "homepage": "https://github.com/smenjas/color-explorer#readme",
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "nodemon": "^2.0.22"
+  }
+}
