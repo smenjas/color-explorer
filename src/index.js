@@ -470,14 +470,14 @@ class Color {
 
             for (; count < rowMax; count += 1) {
                 const hex = '#' + prefix + count.toString(16).padStart(3, '0');
-                const luma = Color.getBrightnessPercentage(hex, 1);
-                const title = `Brightness: ${luma}%`;
 
                 if (color !== null && hex.indexOf(color) === -1) {
                     tr += (color.length < 3) ? '<td></td>' : '';
                     continue;
                 }
 
+                const luma = Color.getBrightnessPercentage(hex, 1);
+                const title = `Brightness: ${luma}%`;
                 const style = Color.style(hex);
                 tr += `<td style="${style}" title="${title}">${hex}</td>`;
             }
