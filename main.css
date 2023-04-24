@@ -1,0 +1,110 @@
+body {
+    font-family: sans-serif;
+    background: white;
+    color: black;
+}
+a {
+    color: #005;
+}
+a:visited {
+    color: #505;
+}
+
+button, input, select, textarea {
+    border: 1px solid black;
+    background: #eee;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+form#color input {
+    border-radius: 0.5rem;
+    outline-width: 0;
+}
+
+table {
+    border: 1px solid black;
+    border-radius: 1rem;
+    border-spacing: 0;
+    margin: auto;
+}
+th {
+    background: #ccc;
+}
+th, td {
+    border: 1px solid #bbb;
+    padding: 0.5rem;
+}
+
+table.color-codes tr:first-child td:first-child,
+tr:first-child th:first-child {
+    border-top-left-radius: 1rem;
+}
+table.color-codes tr:first-child td:last-child,
+tr:first-child th:last-child {
+    border-top-right-radius: 1rem;
+}
+tr:last-child td:first-child {
+    border-bottom-left-radius: 1rem;
+}
+tr:last-child td:last-child {
+    border-bottom-right-radius: 1rem;
+}
+
+table.color-codes,
+table.color-names {
+    border: 1px solid #808080;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    width: calc(100vw - 1.5rem);
+}
+table.color-codes th,
+table.color-names th {
+    text-align: left;
+}
+table.color-codes th,
+table.color-codes td,
+table.color-names th,
+table.color-names td {
+    border: none;
+}
+
+@media print {
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+    form#colors {
+        display: none;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background: black;
+        color: white;
+    }
+    a {
+        color: #aaf;
+    }
+    a:visited {
+        color: #faf;
+    }
+
+    button, input, select, textarea {
+        border-color: white;
+        background: #222;
+        color: white;
+    }
+
+    table {
+        border-color: white;
+    }
+    th {
+        background: #333;
+    }
+    th, td {
+        border-color: #444;
+    }
+}
