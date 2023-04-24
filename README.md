@@ -2,11 +2,10 @@
 
 This is an app for exploring colors, built for fun. It's an exercise to learn
 web development fundamentals, using the simplest technology stack: plain HTML,
-CSS, & client-side JS.
+CSS, & JS.
 
 ## Exercise Constraints
-- No libraries, frameworks, templates, or preprocessors
-- No server side processing (e.g. Node or Deno)
+- No libraries, frameworks, templates, or preprocessors outside Node.js
 - No dev tools except Git, an editor, and a web browser
 
 ## Goals
@@ -17,6 +16,13 @@ CSS, & client-side JS.
 
 ![Filter colors by: medium,pink,purple](screenshots/medium,pink,purple.png)
 ![Filter colors by: 63](screenshots/63.png)
+
+## Development
+Start the node server with:
+```sh
+cd src
+node .
+```
 
 favicon by [Twemoji](https://twemoji.twitter.com/), licensed as [CC-BY
 4.0](https://creativecommons.org/licenses/by/4.0/).
