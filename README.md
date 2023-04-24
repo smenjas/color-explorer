@@ -28,6 +28,10 @@ Start the node server with:
 ```sh
 npm run dev
 ```
+Identify syntax and style issues with:
+```sh
+npm run lint
+```
 
 favicon by [Twemoji](https://twemoji.twitter.com/), licensed as [CC-BY
 4.0](https://creativecommons.org/licenses/by/4.0/).
