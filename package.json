@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/smenjas/color-explorer#readme",
   "devDependencies": {
+    "eslint": "^8.39.0",
     "nodemon": "^2.0.22"
   }
 }
