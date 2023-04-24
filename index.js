@@ -379,7 +379,7 @@ class Color {
         }
 
         const input = form.querySelector('input[name="color"]');
-        input.addEventListener('input', event => {
+        input.addEventListener('input', () => {
             const colorsDiv = document.querySelector('main#colors');
             colorsDiv.innerHTML = Color.renderColors(input.value);
         });
