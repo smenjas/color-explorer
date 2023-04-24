@@ -25,8 +25,7 @@ npm install
 ```
 Start the node server with:
 ```sh
-cd src
-../node_modules/nodemon/bin/nodemon.js .
+npm run dev
 ```
 
 favicon by [Twemoji](https://twemoji.twitter.com/), licensed as [CC-BY
