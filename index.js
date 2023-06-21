@@ -387,7 +387,7 @@ class Color {
 
     static renderColorForm() {
         let html = '<form id="color">';
-        html += '<input name="color">';
+        html += '<input name="color" size="70" maxlength="70">';
         html += '</form>';
 
         return html;
