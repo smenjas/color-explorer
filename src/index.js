@@ -13,28 +13,28 @@ const server = http.createServer((request, response) => {
     case '/':
         response.statusCode = 200;
         response.setHeader('Content-Type', 'text/html');
-        content = fs.readFileSync('../client/index.html', 'utf8');
+        content = fs.readFileSync('client/index.html', 'utf8');
         console.log('HTTP', response.statusCode, request.url);
         break;
     case '/index.js':
         response.statusCode = 200;
         response.setHeader('Content-Type', 'text/javascript');
-        content = fs.readFileSync(`../client${path}`, 'utf8');
+        content = fs.readFileSync(`client${path}`, 'utf8');
         break;
     case '/main.css':
         response.statusCode = 200;
         response.setHeader('Content-Type', 'text/css');
-        content = fs.readFileSync(`../client${path}`, 'utf8');
+        content = fs.readFileSync(`client${path}`, 'utf8');
         break;
     case '/404.jpg':
         response.statusCode = 200;
         response.setHeader('Content-Type', 'image/jpeg');
-        content = fs.readFileSync(`../client/img${path}`);
+        content = fs.readFileSync(`client/img${path}`);
         break;
     case '/img/favicon.ico':
         response.statusCode = 200;
         response.setHeader('Content-Type', 'image/vnd');
-        content = fs.readFileSync(`../client/img${path}`);
+        content = fs.readFileSync(`client/img${path}`);
         break;
     case '/img/apple-touch-icon.png':
     case '/img/favicon-16.png':
@@ -43,12 +43,12 @@ const server = http.createServer((request, response) => {
     case '/img/favicon-512.png':
         response.statusCode = 200;
         response.setHeader('Content-Type', 'image/png');
-        content = fs.readFileSync(`../client${path}`);
+        content = fs.readFileSync(`client${path}`);
         break;
     default:
         response.statusCode = 404;
         response.setHeader('Content-Type', 'text/html');
-        content = fs.readFileSync('../client/404.html', 'utf8');
+        content = fs.readFileSync('client/404.html', 'utf8');
         console.log('HTTP', response.statusCode, request.url);
         break;
     }
